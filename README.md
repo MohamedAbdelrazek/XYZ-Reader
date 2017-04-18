@@ -12,7 +12,7 @@
 | MainActivity  | DetailActivity |
 | ------------- | ------------- |
 
-| ![mainactivity](![screen](../master/screens/Screenshot_20170418-170719.png)  | ![detailsactivity](![screen](../master/screen/Screenshot_20170418-170729.png)  |
+| ![mainactivity](![screen](../master/screen/Screenshot_20170418-170719.png)  | ![detailsactivity](![screen](../master/screen/Screenshot_20170418-170729.png)  |
 ## UI Review Node
 
 * “This app is starting to shape up but it feels a bit off in quite a few places. I can't put finger on it but it feels odd.”
