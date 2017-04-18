@@ -11,7 +11,7 @@
 
 | MainActivity  | DetailActivity |
 | ------------- | ------------- |
-| ![mainactivity](![screens](../master/screens/Screenshot_20170418-170719.png))  | ![detailsactivity](Screenshot_20170418-170729.png)  |
+| ![mainactivity](![screen](../master/screen/Screenshot_20170418-170719.png))  | ![detailsactivity]((![screen](../master/screen/Screenshot_20170418-170729.png)  |
 
 ## UI Review Node
 
