@@ -30,7 +30,6 @@ import android.text.TextUtils;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
-import java.util.HashMap;
 
 /**
  * Helper for building selection clauses for {@link SQLiteDatabase}. Each
@@ -39,7 +38,6 @@ import java.util.HashMap;
  */
 class SelectionBuilder {
     private String mTable = null;
-   private HashMap<String, String> mProjectionMap;
     private StringBuilder mSelection;
     private ArrayList<String> mSelectionArgs;
 
@@ -126,15 +124,6 @@ class SelectionBuilder {
         }
     }
 
-    private void mapColumns(String[] columns) {
-        if (mProjectionMap == null) return;
-        for (int i = 0; i < columns.length; i++) {
-            final String target = mProjectionMap.get(columns[i]);
-            if (target != null) {
-                columns[i] = target;
-            }
-        }
-    }
 
     @Override
     public String toString() {
@@ -155,7 +144,7 @@ class SelectionBuilder {
     private Cursor query(SQLiteDatabase db, String[] columns, String groupBy,
                          String having, String orderBy, String limit) {
         assertTable();
-        if (columns != null) mapColumns(columns);
+
         return db.query(mTable, columns, getSelection(), getSelectionArgs(), groupBy, having,
                 orderBy, limit);
     }
